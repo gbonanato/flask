@@ -11,7 +11,10 @@ def welcome():
     return 'Welcome to Flask'
 
 if __name__ == '__main__':  # Checks if .py file is run as a main program. If so, it runs the created app. 
-    app.run()
+    app.run(debug=True)
+# Quando setamos debug para true, conseguimos ver mensagens dos erros de quando rodamos o app,
+# e assim que salvamos qualquer alteração, o app é rodado novamente.
+
 
 # In python depending on how you run a .py file, the python algorithm determines a vaue for a special
 # variable '__name__'. If the .py file is beeing run as a main program, python sets the variable '__name__'
